@@ -12,7 +12,7 @@ import {
 } from "./shared.types";
 import { revalidatePath } from "next/cache";
 import Question from "@/database/question.model";
-import { Tag } from "lucide-react";
+import Tag from "@/database/tag.model";
 import { FilterQuery } from "mongoose";
 
 export async function getUserById(params: any) {
