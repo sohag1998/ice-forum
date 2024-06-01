@@ -33,12 +33,12 @@ const Page = async ({ params }) => {
           >
             <Image
               src={result.author.picture}
-              className="rounded-full"
+              className="size-5 rounded-full"
               width={22}
               height={22}
               alt="profile"
             />
-            <p className="paragraph-semibold text-dark300_light700">
+            <p className="paragraph-semibold text-dark300_light700 leading-3">
               {result.author.name}
             </p>
           </Link>
