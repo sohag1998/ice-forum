@@ -12,7 +12,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Page = async ({ params }) => {
+const Page = async ({ params, searchParams }) => {
   const { userId: clerkId } = auth();
 
   let mongoUser;
@@ -33,12 +33,12 @@ const Page = async ({ params }) => {
           >
             <Image
               src={result.author.picture}
-              className="size-5 rounded-full"
+              className="rounded-full"
               width={22}
               height={22}
               alt="profile"
             />
-            <p className="paragraph-semibold text-dark300_light700 leading-3">
+            <p className="paragraph-semibold text-dark300_light700">
               {result.author.name}
             </p>
           </Link>
@@ -101,6 +101,8 @@ const Page = async ({ params }) => {
         questionId={result._id}
         userId={mongoUser._id}
         totalAnswers={result.answers.length}
+        page={searchParams?.page}
+        filter={searchParams?.filter}
       />
 
       <Answer
