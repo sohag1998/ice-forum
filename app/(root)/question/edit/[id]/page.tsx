@@ -1,4 +1,4 @@
-import EDQuestion from "@/components/forms/EDQuestion";
+import Question from "@/components/forms/Question";
 import { getQuestionById } from "@/lib/actions/question.action";
 import { getUserById } from "@/lib/actions/user.action";
 import { ParamsProps } from "@/types";
@@ -17,7 +17,7 @@ const Page = async ({ params }: ParamsProps) => {
       <h1 className="h1-bold text-dark100_light900">Edit Question</h1>
 
       <div className="mt-9">
-        <EDQuestion
+        <Question
           type="Edit"
           mongoUserId={mongoUser._id}
           questionDetails={JSON.stringify(result)}
