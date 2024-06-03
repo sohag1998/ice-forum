@@ -38,7 +38,7 @@ const Question = ({ type, mongoUserId, questionDetails }: Props) => {
   const parsedQuestionDetails =
     questionDetails && JSON.parse(questionDetails || "");
 
-  const groupedTags = parsedQuestionDetails?.tags.map((tag) => tag.name);
+  const groupedTags = parsedQuestionDetails?.tags.map((tag: any) => tag.name);
 
   // 1. Define your form.
   const form = useForm<z.infer<typeof QuestionsSchema>>({
@@ -61,6 +61,7 @@ const Question = ({ type, mongoUserId, questionDetails }: Props) => {
           title: values.title,
           content: values.explanation,
           path: pathname,
+          tags: groupedTags || [],
         });
 
         router.push(`/question/${parsedQuestionDetails._id}`);
