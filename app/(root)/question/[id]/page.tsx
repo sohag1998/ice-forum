@@ -12,6 +12,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Question Details | IceFlow",
+};
+
 const Page = async ({ params, searchParams }) => {
   const { userId: clerkId } = auth();
 
