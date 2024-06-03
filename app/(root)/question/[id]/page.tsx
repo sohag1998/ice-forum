@@ -39,7 +39,7 @@ const Page = async ({ params, searchParams }) => {
           >
             <Image
               src={result.author.picture}
-              className="rounded-full"
+              className="size-5 rounded-full"
               width={22}
               height={22}
               alt="profile"
