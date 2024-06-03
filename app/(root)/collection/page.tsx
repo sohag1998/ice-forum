@@ -11,7 +11,7 @@ import { auth } from "@clerk/nextjs/server";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Collection | IceFlow",
+  title: "Collection | ICE FLOW",
 };
 
 export default async function Home({ searchParams }: SearchParamsProps) {

@@ -17,7 +17,7 @@ import AnswersTab from "@/components/shared/AnswersTab";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Profile | IceFlow",
+  title: "Profile | ICE FLOW",
 };
 
 const Page = async ({ params, searchParams }: URLProps) => {

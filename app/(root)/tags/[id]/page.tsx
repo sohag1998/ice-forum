@@ -7,7 +7,7 @@ import { URLProps } from "@/types";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tag Details | IceFlow",
+  title: "Tag Details | ICE FLOW",
 };
 
 const Page = async ({ params, searchParams }: URLProps) => {

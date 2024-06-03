@@ -6,7 +6,7 @@ import React from "react";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Ask-Question | IceFlow",
+  title: "Ask-Question | ICE FLOW",
 };
 const Page = async () => {
   const { userId } = auth();

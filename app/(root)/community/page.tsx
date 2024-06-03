@@ -10,7 +10,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Community | IceFlow",
+  title: "Community | ICE FLOW",
 };
 
 const Page = async ({ searchParams }: SearchParamsProps) => {

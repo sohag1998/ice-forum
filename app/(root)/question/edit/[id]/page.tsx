@@ -6,7 +6,7 @@ import { auth } from "@clerk/nextjs/server";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Edit Question | IceFlow",
+  title: "Edit Question | ICE FLOW",
 };
 
 const Page = async ({ params }: ParamsProps) => {
