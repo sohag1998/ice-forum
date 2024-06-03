@@ -30,7 +30,7 @@ export interface DeleteAnswerParams {
 }
 
 export interface SearchParams {
-  query: string;
+  query: string | any;
   type?: string | null;
 }
 
